@@ -70,12 +70,12 @@ export default function Hero() {
             <p className="text-white text-[13px] font-normal leading-5">{t.hero.description}</p>
           </div>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            <button className="bg-white border border-white/20 flex items-center justify-center px-5 h-10 rounded-full text-[#302220] text-[15px] font-normal whitespace-nowrap hover:bg-gray-100 transition-colors">
+            <a href="https://dbeaver.com/" target="_blank" rel="noopener noreferrer" className="bg-white border border-white/20 flex items-center justify-center px-5 h-10 rounded-full text-[#302220] text-[15px] font-normal whitespace-nowrap hover:bg-gray-100 transition-colors">
               {t.hero.proTools}
-            </button>
-            <button className="border border-white/20 flex items-center justify-center px-5 h-10 rounded-full text-white text-[15px] font-normal whitespace-nowrap hover:bg-white/10 transition-colors">
+            </a>
+            <a href="https://dbeaver.io/" target="_blank" rel="noopener noreferrer" className="border border-white/20 flex items-center justify-center px-5 h-10 rounded-full text-white text-[15px] font-normal whitespace-nowrap hover:bg-white/10 transition-colors">
               {t.hero.openSource}
-            </button>
+            </a>
           </div>
         </div>
       </div>
