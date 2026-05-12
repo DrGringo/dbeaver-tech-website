@@ -25,8 +25,8 @@ export default function Header() {
           <Image
             src="/figma-assets/dbeaver-logo-white.svg"
             alt="DBeaver Tech"
-            width={150}
-            height={33}
+            width={159}
+            height={35}
             priority
           />
         </div>
