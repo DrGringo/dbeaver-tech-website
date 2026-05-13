@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Logo + socials */}
         <div className="flex flex-col gap-[10px] w-full">
           <div className="flex items-center justify-between w-full">
-            <Image src="/figma-assets/footer-logo.svg" alt="DBeaver Tech" width={142} height={34} />
+            <Image src="/figma-assets/header-logo.svg" alt="DBeaver Tech" width={128} height={20} />
             <div className="flex gap-4 items-center">
               {[
                 { src: "/figma-assets/twitter-icon.svg", alt: "Twitter/X", href: "https://x.com/dbeaver_news" },
