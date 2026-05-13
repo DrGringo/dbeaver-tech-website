@@ -16,12 +16,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col gap-8 sm:gap-[30px] items-start w-full">
+      <div className="relative z-10 flex flex-col gap-[30px] items-start w-full">
         {/* Logo + socials */}
-        <div className="flex flex-col gap-4 sm:gap-[10px] w-full">
+        <div className="flex flex-col gap-[10px] w-full">
           <div className="flex items-center justify-between w-full">
-            <Image src="/figma-assets/dbeaver-logo-dark.svg" alt="DBeaver Tech" width={142} height={34} />
-            <div className="flex gap-3 sm:gap-4 items-center">
+            <Image src="/figma-assets/footer-logo.svg" alt="DBeaver Tech" width={142} height={34} />
+            <div className="flex gap-4 items-center">
               {[
                 { src: "/figma-assets/twitter-icon.svg", alt: "Twitter/X", href: "https://x.com/dbeaver_news" },
                 { src: "/figma-assets/facebook-icon.svg", alt: "Facebook", href: "https://www.facebook.com/DBeaverCorporation" },
@@ -38,25 +38,17 @@ export default function Footer() {
 
         {/* Columns */}
         <div className="flex flex-col lg:flex-row lg:gap-[140px] gap-8 items-start w-full">
-          {/* Newsletter */}
-          <div className="flex flex-col gap-2.5 items-start w-full lg:w-[340px]">
-            <p className="text-white text-sm font-normal">{t.footer.newsletter}</p>
-            <div className="flex h-10 items-center gap-2 pl-3.5 pr-1.5 py-1 bg-white border border-[#d4d7dd] rounded-full w-full">
-              <input type="email" placeholder={t.footer.emailPlaceholder} className="flex-1 text-[#959595] text-sm font-normal bg-transparent outline-none min-w-0" />
-              <button className="bg-[#302220] flex items-center justify-center px-4 py-2 rounded-full text-white text-sm font-normal leading-[1.4] whitespace-nowrap hover:bg-[#3d2c2a] transition-colors">
-                {t.footer.submit}
-              </button>
+          {/* Contacts + copyright */}
+          <div className="flex flex-col gap-10 items-start w-full lg:w-[340px]">
+            <div className="flex flex-col gap-2.5 items-start text-white text-sm">
+              <p className="font-black leading-[1.4]">{t.footer.contactsTitle}</p>
+              <div className="font-normal leading-[1.4] space-y-0">
+                <p>{t.footer.address}</p>
+                <p>Email: <a href="mailto:dbeaver.tech@gmail.com" className="hover:underline">dbeaver.tech@gmail.com</a></p>
+                <p>Tel: <a href="tel:+36703257128" className="hover:underline">+36 70 325 7128</a></p>
+              </div>
             </div>
-          </div>
-
-          {/* Contacts */}
-          <div className="flex flex-col gap-2.5 items-start text-white text-sm lg:w-[340px]">
-            <p className="font-black leading-[1.4]">{t.footer.contactsTitle}</p>
-            <div className="font-normal leading-[1.4] space-y-1">
-              <p>{t.footer.address}</p>
-              <p>{t.footer.tel}</p>
-              <p>{t.footer.email}</p>
-            </div>
+            <p className="text-black text-xs font-normal">{t.footer.copyright}</p>
           </div>
 
           {/* Product links */}
@@ -69,12 +61,6 @@ export default function Footer() {
                 {label}
               </a>
             ))}
-          </div>
-
-          {/* Copyright — last on mobile, hidden inside newsletter col on desktop */}
-          <div className="flex flex-col gap-1.5 text-white/60 text-xs font-normal order-last lg:hidden">
-            <p>{t.footer.copyright}</p>
-            <p>{t.footer.legal}</p>
           </div>
         </div>
       </div>

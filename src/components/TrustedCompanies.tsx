@@ -26,7 +26,7 @@ export default function TrustedCompanies() {
   const { t } = useLang();
 
   return (
-    <section className="flex flex-col gap-6 sm:gap-[26px] items-center py-12 sm:py-[60px] px-4 sm:px-8 w-full">
+    <section className="flex flex-col gap-6 sm:gap-[26px] items-center py-12 sm:py-[60px] px-4 sm:px-8 w-full mt-[97px] lg:mt-0" style={{ marginTop: "97px" }}>
       <div className="flex flex-col gap-0.5 items-center w-full">
         <p className="text-[#302220] text-[11px] font-bold tracking-[2.5px] text-center uppercase">
           {t.trusted.heading}

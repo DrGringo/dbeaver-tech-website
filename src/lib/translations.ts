@@ -36,9 +36,7 @@ export const translations = {
       copyright: "© 2026 DBeaver Tech. All rights reserved.",
       legal: "Privacy Policy · Terms of Service",
       contactsTitle: "Contacts",
-      address: "Budapest, Mester u. 46, 1095 Hungary",
-      tel: "Tel: +3618863636",
-      email: "Email: info@dbeavertech.com",
+      address: "Nagymező utca 44. 8. em., 1065 Budapest, Hungary",
     },
   },
   hu: {
@@ -76,9 +74,7 @@ export const translations = {
       copyright: "© 2026 DBeaver Tech. Minden jog fenntartva.",
       legal: "Adatvédelmi irányelvek · Szolgáltatási feltételek",
       contactsTitle: "Kapcsolat",
-      address: "Budapest, Mester u. 46, 1095 Magyarország",
-      tel: "Tel: +3618863636",
-      email: "E-mail: info@dbeavertech.com",
+      address: "Nagymező utca 44. 8. em., 1065 Budapest, Magyarország",
     },
   },
 };
